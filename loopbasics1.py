@@ -6,27 +6,33 @@
 #         print(i)
 
 # for i in range(101):
-#     if i % 5 == 0:
+#     if i % 10 == 0:
 #         print("coding")
-#     elif i % 10:
+#     elif i % 5 == 0:
 #         print("coding dojo")
 
 # sum = 0 
 
-# for i in range(500000):
-#     if i % 2 == 1:
-#         sum += i 
-
+# for x in range(0,500001):
+#     if x % 2 == 1:
+#         sum += x
 # print(sum)
 
 # for i in range(2018,0,-4):
 #     print(i)
 
+
 # low_number = 0
 # high_number = 1000
 # mult = 20
-# for i in range(low_number,high_number):
-#     if i % mult == 0:
-#         print(i)
+# for x  in range(low_number, high_number, mult):
+#     if x % mult == 0:
+#         print(x)
+
+
+
+
+
+
 
 
