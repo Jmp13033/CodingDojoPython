@@ -11,18 +11,22 @@ class user:
     
     def banking(self, account):
         self.cash += account
+        return self
     
-    def withrawl(self, value):
+    def withdrawl(self, value):
         self.cash -= value
+        return self
     
     def user_balance(self):
         print(self.first_name)
         print(self.cash)
+        return self
    
     def transfer_money(self,amount,user):
         self.cash -= amount
         user.cash += amount
         self.user_balance()
+        return self
         
 
 
@@ -32,26 +36,6 @@ user3 = user("Evan", "Peck", "Evan.bear")
 
 
 
- 
-
-user1.banking(77)
-
-
-
-
-user2.banking(77)
-user2.banking(99)
-user2.withrawl(55)
-
-
-user3.banking(1000)
-
-
-
-
-user3.transfer_money(100,user1)
-
-user1.user_balance()
-
-
-
+user1.banking(88).banking(77).banking(88).banking(88).withdrawl(99)
+user2.banking(88).banking(88).banking(6543).banking(99876).withdrawl(543)
+user2.banking(7765).banking(66).banking(543).banking(6546).withdrawl(98)
